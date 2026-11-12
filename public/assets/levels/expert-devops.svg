@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" rx="16" fill="#0d1117"/>
+
+  <!-- CI/CD pipeline header -->
+  <rect x="20" y="15" width="360" height="28" rx="6" fill="#161b22" stroke="#F57C00" stroke-width="1"/>
+  <text x="30" y="34" font-family="monospace" font-size="10" fill="#F57C00">CI/CD PIPELINE</text>
+  <rect x="150" y="22" width="50" height="14" rx="3" fill="#22c55e" opacity="0.2"/>
+  <text x="175" y="32" font-family="monospace" font-size="7" fill="#22c55e" text-anchor="middle">BUILD</text>
+  <line x1="200" y1="29" x2="215" y2="29" stroke="#F57C00" stroke-width="1.5"/>
+  <rect x="215" y="22" width="50" height="14" rx="3" fill="#58a6ff" opacity="0.2"/>
+  <text x="240" y="32" font-family="monospace" font-size="7" fill="#58a6ff" text-anchor="middle">TEST</text>
+  <line x1="265" y1="29" x2="280" y2="29" stroke="#F57C00" stroke-width="1.5"/>
+  <rect x="280" y="22" width="50" height="14" rx="3" fill="#FDB441" opacity="0.2"/>
+  <text x="305" y="32" font-family="monospace" font-size="7" fill="#FDB441" text-anchor="middle">DEPLOY</text>
+
+  <!-- Terminal -->
+  <rect x="20" y="55" width="200" height="100" rx="8" fill="#161b22" stroke="#F57C00" stroke-width="1.5"/>
+  <circle cx="36" cy="69" r="3.5" fill="#ff5555"/>
+  <circle cx="46" cy="69" r="3.5" fill="#FDB441"/>
+  <circle cx="56" cy="69" r="3.5" fill="#22c55e"/>
+  <text x="30" y="90" font-family="monospace" font-size="8" fill="#22c55e">$ ansible-playbook -i prod deploy.yml</text>
+  <text x="30" y="104" font-family="monospace" font-size="7" fill="#22c55e">PLAY [deploy] ****************</text>
+  <text x="30" y="116" font-family="monospace" font-size="7" fill="#58a6ff">TASK [Update] ok: 12</text>
+  <text x="30" y="128" font-family="monospace" font-size="7" fill="#58a6ff">TASK [Restart] ok: 12</text>
+  <text x="30" y="140" font-family="monospace" font-size="7" fill="#22c55e">PLAY RECAP: 12 ok  0 failed</text>
+
+  <!-- Cloud infra -->
+  <ellipse cx="320" cy="100" rx="55" ry="28" fill="#161b22" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="320" y="95" font-family="monospace" font-size="10" fill="#F57C00" text-anchor="middle">CLOUD</text>
+  <text x="320" y="108" font-family="monospace" font-size="7" fill="#888" text-anchor="middle">k8s cluster</text>
+
+  <!-- Kubernetes nodes -->
+  <rect x="50" y="170" width="70" height="60" rx="5" fill="#1a1a2e" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="85" y="185" font-family="monospace" font-size="8" fill="#58a6ff" text-anchor="middle">k8s-node-1</text>
+  <rect x="57" y="192" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="79" y="192" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="101" y="192" width="14" height="14" rx="2" fill="#161b22" stroke="#FDB441" stroke-width="1"/>
+  <rect x="57" y="210" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="79" y="210" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+
+  <rect x="165" y="170" width="70" height="60" rx="5" fill="#1a1a2e" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="200" y="185" font-family="monospace" font-size="8" fill="#58a6ff" text-anchor="middle">k8s-node-2</text>
+  <rect x="172" y="192" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="194" y="192" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="216" y="192" width="14" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="172" y="210" width="18" height="14" rx="2" fill="#161b22" stroke="#FDB441" stroke-width="1"/>
+  <rect x="194" y="210" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+
+  <rect x="280" y="170" width="70" height="60" rx="5" fill="#1a1a2e" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="315" y="185" font-family="monospace" font-size="8" fill="#58a6ff" text-anchor="middle">k8s-node-3</text>
+  <rect x="287" y="192" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="309" y="192" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="331" y="192" width="14" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="287" y="210" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+  <rect x="309" y="210" width="18" height="14" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="1"/>
+
+  <!-- Network connections -->
+  <line x1="120" y1="155" x2="85" y2="170" stroke="#F57C00" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="160" y1="105" x2="165" y2="170" stroke="#F57C00" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="290" y1="105" x2="315" y2="170" stroke="#F57C00" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Monitoring dashboard -->
+  <rect x="20" y="245" width="360" height="40" rx="6" fill="#161b22" stroke="#F57C00" stroke-width="1"/>
+  <text x="30" y="260" font-family="monospace" font-size="7" fill="#22c55e">● Grafana  </text>
+  <text x="110" y="260" font-family="monospace" font-size="7" fill="#58a6ff">● Prometheus  </text>
+  <text x="210" y="260" font-family="monospace" font-size="7" fill="#FDB441">● AlertManager  </text>
+  <text x="30" y="275" font-family="monospace" font-size="7" fill="#888">Uptime: 99.99%  |  Pods: 48/48  |  Auto-scaling: ENABLED</text>
+</svg>
